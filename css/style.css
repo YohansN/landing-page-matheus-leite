@@ -1,0 +1,30 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Frank+Ruhl+Libre:wght@700&family=Kanit:wght@700&display=swap');
+/*
+font-family: 'Archivo', sans-serif; -- Subtitle, Texto Corrido
+font-family: 'Frank Ruhl Libre', serif; -- TITLE
+font-family: 'Kanit', sans-serif; -- TOPICOS
+*/
+
+/*Variáveis*/
+:root {
+    --cor-primaria: #F6F1F1;
+    --cor-secundaria: #D0E6F0;
+    --cor-action: #EFD593;
+    --cor-texto: #051023;
+}
+
+/*Configuração padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

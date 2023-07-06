@@ -6,7 +6,7 @@ font-family: 'Frank Ruhl Libre', serif; -- TITLE (Bold)
 font-family: 'Kanit', sans-serif; -- TOPICOS (Bold)
 */
 
-/*Variáveis*/
+/*Variáveis-------------------------------------------*/
 :root {
     --cor-primaria: #F6F1F1;
     --cor-secundaria: #D0E6F0;
@@ -14,7 +14,7 @@ font-family: 'Kanit', sans-serif; -- TOPICOS (Bold)
     --cor-texto: #051023;
 }
 
-/*Configuração padrão*/
+/*Configuração padrão-------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ body {
     background-color: var(--cor-primaria);
 }
 
-/*Nav bar*/
+/*Nav bar-------------------------------------------*/
 .nav-list {
     padding: 20px 0 20px 0;
     background-color: var(--cor-secundaria);
@@ -50,6 +50,7 @@ body {
 .nav-list li a {
     padding: 10px;
     display: inline-block;
+    color: var(--cor-texto);
     transition: 0.3s ease;
 }
 
@@ -57,4 +58,71 @@ body {
     color: var(--cor-primaria);
     background-color: var(--cor-action);
     border-radius: 10px;
+}
+
+/*Hero Section-------------------------------------------*/
+.hero-section{
+    margin-top: 110px;
+    display: flex;
+}
+
+.hero-text{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 320px;
+    margin-right: 65px;
+}
+
+.hero-text h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 80px;
+    color: var(--cor-texto);
+}
+
+.hero-text p{
+    margin-top: 40px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 32px;
+    color: var(--cor-texto);
+}
+
+.hero-text button{
+    margin-top: 40px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 32px;
+    color: var(--cor-texto);
+    padding: 20px 40px 20px 40px;
+    border: 3px solid var(--cor-action);
+    border-radius: 60px;
+    transition: 0.2s ease;
+}
+
+.hero-text button:hover{
+    background-color: var(--cor-action);
+    color: var(--cor-primaria);
+}
+
+.hero-img{
+    flex: 1;
+    margin-right: 320px;
+    margin-left: 65px;
+}
+
+.hero-img img{
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+}
+
+
+
+
+
+
+
+/*Classe de teste*/
+.borda{
+    border: 1px solid red;
 }

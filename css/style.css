@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: end;
     font-family: 'Archivo', sans-serif;
+    font-size: 20px;
 }
 
 .nav-list > li {
@@ -53,6 +54,7 @@ body {
 }
 
 .nav-list li a:hover {
+    color: var(--cor-primaria);
     background-color: var(--cor-action);
     border-radius: 10px;
 }

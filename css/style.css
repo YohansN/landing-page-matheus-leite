@@ -72,6 +72,10 @@ body {
 }
 
 /*Hero Section-------------------------------------------*/
+#nome-titulo{
+    background-color: var(--cor-action);
+}
+
 .hero-section{
     margin-top: 110px;
     display: flex;
@@ -107,6 +111,7 @@ body {
     border: 3px solid var(--cor-action);
     border-radius: 60px;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .hero-text button:hover{
@@ -176,7 +181,16 @@ box-shadow: 0px 10px 25px 0px rgba(189,189,189,1);
     font-size: 20px;
 }
 
-
+/*Configuração do navegador (Scrollbar e mouse selection)*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-action);
+}
+::selection{
+    background-color: var(--cor-action);
+}
 
 /*Classe de teste*/
 .borda{

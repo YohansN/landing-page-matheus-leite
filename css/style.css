@@ -1,9 +1,9 @@
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Frank+Ruhl+Libre:wght@700&family=Kanit:wght@700&display=swap');
 /*
-font-family: 'Archivo', sans-serif; -- Subtitle, Texto Corrido
-font-family: 'Frank Ruhl Libre', serif; -- TITLE
-font-family: 'Kanit', sans-serif; -- TOPICOS
+font-family: 'Archivo', sans-serif; -- Subtitle, Texto Corrido (light)
+font-family: 'Frank Ruhl Libre', serif; -- TITLE (Bold)
+font-family: 'Kanit', sans-serif; -- TOPICOS (Bold)
 */
 
 /*Variáveis*/
@@ -20,11 +20,39 @@ font-family: 'Kanit', sans-serif; -- TOPICOS
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: var(--cor-texto);
 }
 
 body {
-    max-width: 1200px;
+    max-width: 100vw;
     margin: 0 auto;
+    background-color: var(--cor-primaria);
 }
 
+/*Nav bar*/
+.nav-list {
+    padding: 20px 0 20px 0;
+    background-color: var(--cor-secundaria);
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    font-family: 'Archivo', sans-serif;
+}
 
+.nav-list > li {
+    display: inline;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-list li a {
+    padding: 10px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: var(--cor-action);
+    border-radius: 10px;
+}

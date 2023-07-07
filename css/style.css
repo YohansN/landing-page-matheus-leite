@@ -14,8 +14,13 @@ font-family: 'Kanit', sans-serif; -- TOPICOS (Bold) tam 32
     --cor-texto: #051023;
 
     --texto-corrido: 'Archivo', sans-serif;
-    --texto-titulo: 'Frank Ruhl Libre', serif;
     --texto-topicos: 'Kanit', sans-serif;
+    --texto-titulo: 'Frank Ruhl Libre', serif;
+
+    --tam-corrido: 20px;
+    --tam-topicos: 40px;
+    --tam-titulo: 80px;
+    
 
     --margem: 320px;
 }
@@ -93,10 +98,10 @@ body {
     font-family: var(--texto-titulo);
     font-size: 80px;
     color: var(--cor-texto);
+    padding-bottom: 40px;
 }
 
 .hero-text p{
-    margin-top: 40px;
     font-family: var(--texto-corrido);
     font-size: 32px;
     color: var(--cor-texto);
@@ -136,8 +141,9 @@ body {
 .sobre{
     display: flex;
     margin-top: 150px;
+    margin-bottom:150px;
     background-color: var(--cor-secundaria);
-    height: 710px;
+    min-height: 710px;
     align-items: center;
     -webkit-box-shadow: 0px 10px 25px 0px rgba(189,189,189,1);
 -moz-box-shadow: 0px 10px 25px 0px rgba(189,189,189,1);
@@ -163,23 +169,60 @@ box-shadow: 0px 10px 25px 0px rgba(189,189,189,1);
     flex: 2;
     margin-right: var(--margem);
     margin-left: 150px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .sobre-text h2{
     text-align: start;
     text-transform: uppercase;
     font-family: var(--texto-topicos);
-    font-size: 40px;
+    font-size: var(--tam-topicos);
     color: var(--cor-action);
-    margin-bottom: 10px;
-    margin-left: 5px;
+    padding-bottom: 10px;
 }
 
 .sobre-text p{
     color: var(--cor-texto);
     font-family: var(--texto-corrido);
-    font-size: 20px;
+    font-size: var(--tam-corrido);
 }
+
+/*Como funciona ------------------------------------------*/
+.como-funciona{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.cf-text{
+    flex: 2;
+    margin-left: var(--margem);
+    margin-right: 20px;
+}
+
+.cf-text h2{
+    text-transform: uppercase;
+    font-family: var(--texto-topicos);
+    color: var(--cor-action);
+    font-size: var(--tam-topicos);
+    padding-bottom: 10px;
+}
+
+.cf-text p{
+    font-family: var(--texto-corrido);
+    color: var(--cor-texto);
+    font-size: var(--tam-corrido);
+}
+
+.cf-ilustracao{
+    flex: 1;
+    margin-right: var(--margem);
+    margin-left: 20px;
+}
+
+
+
 
 /*Configuração do navegador (Scrollbar e mouse selection)*/
 ::-webkit-scrollbar{

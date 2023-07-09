@@ -352,6 +352,7 @@ body {
     min-height: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
+    width: 100%;
 }
 
 .faq h2{
@@ -361,7 +362,6 @@ body {
     font-size: var(--tam-topicos);
     margin-left: var(--margem);
     padding-bottom: 10px;
-
 }
 
 .perguntas-container{
@@ -381,35 +381,22 @@ body {
     -webkit-box-shadow: 0px 10px 3px 0px rgba(222,222,222,1);
     -moz-box-shadow: 0px 10px 3px 0px rgba(222,222,222,1);
     box-shadow: 0px 10px 3px 0px rgba(222,222,222,1);
-}
-
-.linha-pergunta{
-    padding: 20px 10px 20px 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     cursor: pointer;
-}
-
-.linha-pergunta .more{
-    font-size: 50px;
-}
-
-.linha-pergunta .less{
-    display: none;
 }
 
 .texto-pergunta{
     color: var(--cor-texto);
     font-family: var(--texto-corrido);
     font-size: 23px;
+    font-weight: bolder;
+    padding: 20px;
 }
 
 .texto-resposta{
     color: var(--cor-texto);
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
-    padding: 0 20px 0 20px;
+    padding: 0 60px 0 60px;
     display: show;
 }
 

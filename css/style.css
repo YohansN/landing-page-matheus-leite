@@ -283,7 +283,69 @@ body {
     font-weight: bold;
 }
 
-/*Configuração do navegador (Scrollbar e mouse selection)*/
+/*Feedback ------------------------------------------------------------*/
+.feedback{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-left: var(--margem);
+    margin-right: var(--margem);
+}
+
+.feedback h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-action);
+    font-family: var(--texto-topicos);
+    font-size: var(--tam-topicos);
+    padding-bottom: 40px;
+}
+
+.card{
+    position: relative;
+    min-height: 400px;
+    max-height: 700px;
+}
+
+.card span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    font-size: 150px;
+    width: 200px;
+    height: 200px;
+    color: var(--cor-texto);
+    overflow: hidden;
+}
+
+.nome{
+    position: absolute;
+    display: flex;
+    font-family: var(--texto-corrido);
+    color: var(--cor-texto);
+    font-size: var(--tam-corrido);
+    font-weight: bolder;
+    text-transform: capitalize;
+    left: 30px;
+    top: 215px;
+}
+
+.review{
+    position: absolute;
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+    top: 250px;
+    text-align: center;
+}
+
+/*Configuração do navegador (Scrollbar e mouse selection) -----------------*/
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -294,7 +356,7 @@ body {
     background-color: var(--cor-action);
 }
 
-/*Classe de teste*/
+/*Classe de teste --------------------------------------*/
 .borda{
     border: 1px solid red;
 }

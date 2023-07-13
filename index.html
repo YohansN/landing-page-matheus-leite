@@ -12,7 +12,7 @@
 <body>
     <nav>
         <ul class="nav-list">
-            <li><a href="#">CONTATOS</a></li>
+            <li><a href="#contatos">CONTATOS</a></li>
             <li><a href="#como-funciona">COMO FUNCIONA</a></li>
             <li><a href="#sobre">SOBRE MIM</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -23,7 +23,7 @@
             <div class="hero-text">
                 <h1> <span id="nome-titulo">Matheus Leite</span> <br> Atendimento Psicológico</h1>
                 <p>Atendimento psicológico especializado do conforto de sua casa!</p>
-                <button>Marque uma consulta!</button>
+                <a href="#contatos"> <button>Marque uma consulta!</button> </a>
             </div>
             <div class="hero-img"> <img src="/imgs/Hero_-_Images-removebg-preview (1).png" alt="Uma mulher sorri enquanto mexe no computador."> </div>
         </section>
@@ -101,7 +101,7 @@
         </section>
 
         <section class="faq" id="faq">
-            <h2>perguntas frequêntes</h2>
+            <h2>perguntas frequentes</h2>
             <div class="perguntas-container">
                 <details class="pergunta">
                     <summary class="texto-pergunta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis erat in diam porttitor, at imperdiet risus laoreet.</summary>
@@ -122,7 +122,55 @@
             
         </section>
 
-        <section class="contatos"></section>
+        <section class="contatos" id="contatos">
+            <div>
+                <h2>entre em contato!</h2>
+                <p>Gostou do que viu? Gostaria de marcar uma consulta ou tirar alguma dúvida? <br> Me mande uma mensagem e responderei assim que possível!</p>
+            </div>
+
+            <div class="caixa-flutuante">
+
+                <div class="lista-contatos">
+                    <div class="ilustracao-correio">
+                        <img src="/imgs/mailbox-illustration.png" alt="Ilustração de caixa de correio">
+                    </div>
+                    <div class="contato" id="whatsapp">
+                        <div class="icon"><a href="https://api.whatsapp.com/message/OQKS7OBR34TCE1?autoload=1&app_absent=0" target="_blank"><img src="/imgs/whatsapp_icon.png" alt="Imagem da logo do Whatsapp."></a></div>
+                        <p>Me chama no <a href="https://api.whatsapp.com/message/OQKS7OBR34TCE1?autoload=1&app_absent=0" target="_blank">Whatsapp! (85) 99901-6122 </a></p>
+                    </div>
+                    <div class="contato" id="instagram">
+                        <div class="icon"><a href="https://www.instagram.com/matheuslb.psi/" target="_blank"><img src="/imgs/instagram_icon.png" alt="Imagem da logo do Instagram."></a></div>
+                        <p>Me siga para dicas sobre psicologia! <a href="https://www.instagram.com/matheuslb.psi/" target="_blank">@matheuslb.psi</a></p>
+                    </div>
+                    <div class="contato" id="email">
+                        <div class="icon"><img src="/imgs/email_icon.png" alt="Imagem de uma carta."> </div>
+                        <p>E-mail: <span>matheuslb.psi@gmail.com</span></p>
+                    </div>
+                </div>
+
+                <div class="form-email">
+                    <h3>Me envie um E-mail!</h3>
+                    <form action="https://formsubmit.co/yohans.dev@gmail.com" method="POST" id="formulario-mensagem">
+                        <input type="hidden" name="_subject" value="Nova mensagem!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <label for="nome">Nome</label>
+                        <br>
+                        <input type="text" name="nome" placeholder="Seu nome aqui..." required>
+                        <br>
+                        <label for="email">E-mail</label>
+                        <br>
+                        <input type="email" name="email" placeholder="Seu e-mail aqui..." required>
+                        <br>
+                        <label for="mensagem">Mensagem</label>
+                        <br>
+                        <textarea type="text" name="mensagem" form="formulario-mensagem" placeholder="Escreva sua mensagem aqui..." required rows="10" cols="50" minlength="1" maxlength="1800"></textarea>
+                        <button type="submit">Enviar</button>
+                        <!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+                    </form>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <footer></footer>
 </body>

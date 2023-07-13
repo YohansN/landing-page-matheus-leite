@@ -400,6 +400,145 @@ body {
     display: show;
 }
 
+/*Contato -----------------------------------------------------------------*/
+.contatos{
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
+}
+
+.contatos h2{
+    font-family: var(--texto-topicos);
+    color: var(--cor-action);
+    font-size: var(--tam-topicos);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.contatos > div > p{
+    font-family: var(--texto-corrido);
+    color: var(--cor-texto);
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.caixa-flutuante{
+    display: flex;
+    margin-left: var(--margem);
+    margin-right: var(--margem);
+    height: 100%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
+    -moz-box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
+    box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
+}
+
+.lista-contatos{
+    display: inline-block;
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 20px 0 0 20px;
+}
+
+.ilustracao-correio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ilustracao-correio img{
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    padding-bottom: 20px;
+}
+
+.contato p{
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+    color: var(--cor-texto);
+    padding-left: 10px;
+}
+
+.icon{
+    padding: 8px;
+    background-color: var(--cor-action);
+    border-radius: 50%;
+}
+
+.icon img{
+    display: flex;
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+}
+
+.contato a, span{
+    font-weight: bolder;
+}
+
+/*Entre em contato | Formulario ------------------------------------*/
+.form-email{
+    flex: 1;
+    background-color: var(--cor-secundaria);
+    border-radius: 0 20px 20px 0;
+}
+
+.form-email h3{
+    margin-top: 40px;
+    text-align: center;
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+}
+
+.form-email form{
+    display: block;
+    padding: 0 40px 0 40px;
+    margin: 20px 0 20px 0;
+}
+
+.form-email label{
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+}
+
+.form-email input, textarea{
+    font-family: var(--texto-corrido);
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.form-email button{
+    background-color: var(--cor-action);
+    color: var(--cor-texto);
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+    width: 100%;
+    border-style: none;
+    padding: 8px 0 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-email button:hover{
+    background-color: #f5c650;
+}
 
 /*Configuração do navegador (Scrollbar e mouse selection) -----------------*/
 ::-webkit-scrollbar{

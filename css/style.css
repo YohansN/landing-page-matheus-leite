@@ -540,6 +540,76 @@ body {
     background-color: #f5c650;
 }
 
+/*Footer ---------------------------------------------------------------*/
+
+footer{
+    background-color: var(--cor-texto);
+}
+
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    margin-left: var(--margem);
+    margin-right: var(--margem);
+    min-height: 100%;
+}
+
+.mapa{
+    margin-left: 20px;
+    padding-right: 100px;
+}
+
+.mapa *{
+    color: var(--cor-primaria);
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+    list-style-type: none;
+}
+
+.mapa h4{
+    padding-bottom: 12px;
+}
+
+.mapa li{
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.links{
+    padding-right: 100px;
+}
+
+.links *{
+    color: var(--cor-primaria);
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+    list-style-type: none;
+}
+
+.links h4{
+    padding-bottom: 12px;
+}
+
+.links li{
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.aviso *{
+    color: var(--cor-primaria);
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+}
+
+footer > p,a{
+    color: var(--cor-primaria);
+    font-family: var(--texto-corrido);
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 /*Configuração do navegador (Scrollbar e mouse selection) -----------------*/
 ::-webkit-scrollbar{
     width: 15px;

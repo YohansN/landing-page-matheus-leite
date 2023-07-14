@@ -403,8 +403,11 @@ body {
 /*Contato -----------------------------------------------------------------*/
 .contatos{
     padding-top: 60px;
+    padding-bottom: 60px;
     height: 100%;
     width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .contatos h2{
@@ -426,6 +429,7 @@ body {
 }
 
 .caixa-flutuante{
+    
     display: flex;
     margin-left: var(--margem);
     margin-right: var(--margem);
@@ -438,9 +442,11 @@ body {
 
 .lista-contatos{
     display: inline-block;
-    flex: 2;
+    flex: 3;
     background-color: #ffffff;
     border-radius: 20px 0 0 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .ilustracao-correio{
@@ -489,9 +495,11 @@ body {
 
 /*Entre em contato | Formulario ------------------------------------*/
 .form-email{
-    flex: 1;
+    flex: 2;
     background-color: var(--cor-secundaria);
     border-radius: 0 20px 20px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .form-email h3{

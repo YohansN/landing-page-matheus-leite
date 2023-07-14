@@ -65,15 +65,24 @@ body {
 .nav-list li a {
     padding: 10px;
     display: inline-block;
+    position: relative;
     color: var(--cor-texto);
-    transition: 0.3s ease;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
-.nav-list li a:hover {
-    color: var(--cor-primaria);
+.nav-list a::after {
+    position: absolute;
+    content: "";
     background-color: var(--cor-action);
-    border-radius: 10px;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
 }
 
 /*Hero Section-------------------------------------------*/

@@ -1,8 +1,8 @@
 /*Responsividade para versões Mobile*/
-html{
+/*html{
     width: 100vw;
     background-color: red;
-}
+}*/
 
 
 @media screen and (max-width: 320px){

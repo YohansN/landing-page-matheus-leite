@@ -53,6 +53,7 @@ body {
     justify-content: end;
     font-family: var(--texto-corrido);
     font-size: 20px;
+    max-width: 100%;
 }
 
 .nav-list > li {
@@ -93,7 +94,7 @@ body {
 .hero-section{
     margin-top: 110px;
     display: flex;
-    width: 100vw;
+    max-width: 100%;
 }
 
 .hero-text{
@@ -102,6 +103,7 @@ body {
     align-items: center;
     margin-left: var(--margem);
     margin-right: 50px;
+    max-width: 100%;
 }
 
 .hero-text h1{
@@ -138,13 +140,13 @@ body {
     flex: 1;
     margin-right: 320px;
     margin-left: 50px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .hero-img img{
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 600px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*Sobre ------------------------------------*/
@@ -164,6 +166,8 @@ body {
     flex: 1;
     border-radius: 50%;
     margin-left: var(--margem);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .sobre-img img{
@@ -174,13 +178,15 @@ body {
     object-position: 50% 20%;
 }
 
-
 .sobre-text{
     flex: 2;
     margin-right: var(--margem);
     margin-left: 150px;
     padding-bottom: 100px;
     padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
 }
 
 .sobre-text h2{
@@ -201,15 +207,22 @@ body {
 /*Como funciona ------------------------------------------*/
 .como-funciona{
     display: flex;
-    margin-top: 100px;
+    padding-top: 100px;
     align-items: center;
     padding-bottom: 100px;
+    align-items: center;
+    margin-left: var(--margem);
+    margin-right: var(--margem);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .cf-text{
     flex: 2;
-    margin-left: var(--margem);
     margin-right: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px 20px 10px 20px;
 }
 
 .cf-text h2{
@@ -228,8 +241,14 @@ body {
 
 .cf-ilustracao{
     flex: 1;
-    margin-right: var(--margem);
     margin-left: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cf-ilustracao img{
+    width: 100%;
+    height: 100%;
 }
 
 /*Topicos trabalhados --------------------------------------*/
@@ -261,6 +280,9 @@ body {
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
     padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 100%;
 }
 
 .topicos-trabalhados ul{
@@ -277,7 +299,7 @@ body {
 }
 
 .topicos-trabalhados ul li{
-    min-width: 100%;
+    max-width: 100%;
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
@@ -307,6 +329,7 @@ body {
     justify-content: space-around;
     margin-left: var(--margem);
     margin-right: var(--margem);
+    max-width: 100%;
 }
 
 .feedback h2{
@@ -320,6 +343,7 @@ body {
 
 .card{
     position: relative;
+    padding: 30px;
     min-height: 400px;
     max-height: 700px;
 }
@@ -338,22 +362,21 @@ body {
 }
 
 .nome{
-    position: absolute;
     display: flex;
     font-family: var(--texto-corrido);
     color: var(--cor-texto);
     font-size: 23px;
+    padding-top: 10px;
     text-transform: capitalize;
-    left: 30px;
-    top: 215px;
+    justify-content: center;
 }
 
 .review{
     position: absolute;
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
-    top: 250px;
-    text-align: center;
+    padding-top: 10px;
+    justify-content: center;
     color: var(--cor-texto);
 }
 
@@ -450,6 +473,7 @@ body {
     -webkit-box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
     -moz-box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
     box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
+    max-width: 100%;
 }
 
 .lista-contatos{
@@ -459,6 +483,7 @@ body {
     border-radius: 20px 0 0 20px;
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: 100%;
 }
 
 .ilustracao-correio{
@@ -470,15 +495,16 @@ body {
 }
 
 .ilustracao-correio img{
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .contato {
     display: flex;
     align-items: center;
-    padding-left: 90px;
-    padding-bottom: 20px;
+    padding: 10px;
+    margin-left: 80px;
+    max-width: 100%;
 }
 
 .contato p{
@@ -512,6 +538,8 @@ body {
     border-radius: 0 20px 20px 0;
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: 100%;
+    min-width: 50%;
 }
 
 .form-email h3{
@@ -579,8 +607,8 @@ footer{
 
 .mapa{
     flex: 1;
-    margin-left: 20px;
-    padding-right: 100px;
+    padding: 10px 100px 10px 10px;
+    max-width: 100%;
 }
 
 .mapa *{
@@ -596,12 +624,12 @@ footer{
 
 .mapa li{
     padding-bottom: 10px;
-    padding-right: 10px;
 }
 
 .links{
     flex: 1;
-    padding-right: 100px;
+    padding: 10px 100px 10px 10px;
+    max-width: 100%;
 }
 
 .links *{
@@ -617,11 +645,12 @@ footer{
 
 .links li{
     padding-bottom: 10px;
-    padding-right: 10px;
 }
 
 .aviso{
+    padding: 10px;
     flex: 3;
+    max-width: 100%;
 }
 
 .aviso *{

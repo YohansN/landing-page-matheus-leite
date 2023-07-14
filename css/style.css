@@ -93,13 +93,14 @@ body {
 .hero-section{
     margin-top: 110px;
     display: flex;
+    width: 100vw;
 }
 
 .hero-text{
     flex: 1;
     justify-content: center;
     align-items: center;
-    margin-left: 320px;
+    margin-left: var(--margem);
     margin-right: 50px;
 }
 
@@ -276,7 +277,7 @@ body {
 }
 
 .topicos-trabalhados ul li{
-    
+    min-width: 100%;
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
@@ -302,6 +303,7 @@ body {
 
 .card-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-left: var(--margem);
     margin-right: var(--margem);
@@ -438,8 +440,9 @@ body {
 }
 
 .caixa-flutuante{
-    
+
     display: flex;
+    flex-wrap: wrap;
     margin-left: var(--margem);
     margin-right: var(--margem);
     height: 100%;
@@ -567,12 +570,15 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
+    flex-wrap: wrap;
     margin-left: var(--margem);
     margin-right: var(--margem);
     min-height: 100%;
+    max-width: 100%;
 }
 
 .mapa{
+    flex: 1;
     margin-left: 20px;
     padding-right: 100px;
 }
@@ -594,6 +600,7 @@ footer{
 }
 
 .links{
+    flex: 1;
     padding-right: 100px;
 }
 
@@ -611,6 +618,10 @@ footer{
 .links li{
     padding-bottom: 10px;
     padding-right: 10px;
+}
+
+.aviso{
+    flex: 3;
 }
 
 .aviso *{

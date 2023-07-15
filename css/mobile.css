@@ -4,145 +4,65 @@
     background-color: red;
 }*/
 
-
-@media screen and (max-width: 320px){
-    /*Nav*/
-    /*Hero*/
-    /*Sobre*/
-    /*Como Funciona*/
-    /*Topicos*/
-    /*Feedback*/
-    /*FAQ*/
-    /*Contatos*/
-    /*Footer*/
-}
-
-/*Celulares*/
-@media (min-width: 321px) and (max-width: 480px){}
-/*Tablets*/
-@media (min-width: 481px) and (max-width: 768px){}
-/*Laptop*/
-@media (min-width: 769px) and (max-width: 1024px){
+/*Laptop tirar as margens dos lados*/
+@media screen and (max-width: 1024px){
     html{
-        width: 100vw;
-        background-color: red;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(57, 57, 57);
+        min-height: 100%;
     }
+
     *{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: var(--cor-texto);
     }
-    body {
+
+    body{
         max-width: 100vw;
         margin: 0 auto;
+        background-color: var(--cor-primaria);
+        min-height: 100%;
     }
-
     /*Nav*/
-    .nav-list{
-        width: 100vw;
-        margin: 0;
+    nav{
+        width: 100%;
     }
+    
     /*Hero*/
-    .hero-section{
-        margin-top: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
-        width: 100%;
-        height: 100%;
-    }
-    .hero-text{
-        margin: 0;
-    }
-
-    .hero-img{
-        max-height: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        margin: 0;
-        padding: 0;
-    }
-    .hero-img img{
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-    }
     /*Sobre*/
-    .sobre{
-        display: block;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 80px;
-        margin-bottom: 40px;
-        width: 100%;
-    }
-
-    .sobre-img{
-        margin: 0;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    .sobre-text{
-        padding-top: 0;
-        padding-bottom: 30px;
-        margin: 0;
-        max-width: 100%;
-        height: 100%;
-    }
-
     /*Como Funciona*/
-    .como-funciona{
-        margin:40px 0 40px 0;
-        padding: 0;
-        margin-top: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .cf-text{
-        width: 100%;
-        height: 100%;
-        flex: 3;
-        margin: 0;
-    }
-
-    .cf-ilustracao{
-        margin: 0;
-        flex: 1;
-        width: 100%;
-        height: 100%;
-    }
-
-    .cf-ilustracao img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
     /*Topicos*/
-    .topicos-trabalhados{
-        padding: 80px 40px 80px 40px;
-        margin: 0 40px 0 40px;
-    }
-
-    .topicos-trabalhados ul{
-        margin: 0;
-    }
-
     /*Feedback*/
-    .feedback{
-        width: 100%;
-        padding: 60px 40px 60px 40px;
-        margin: 0;
-    }
-
-    .card-container{
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
     /*FAQ*/
     /*Contatos*/
     /*Footer*/
 }
-/*Desktop*/
-@media (min-width: 1025px) and (max-width: 1200px){}
+
+/*Tablets (Ocultar imagens dispensáveis)*/
+@media screen and (max-width: 768px){
+    html{
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: var(--cor-texto);
+    }
+
+    body{
+        max-width: 100vw;
+        margin: 0 auto;
+        background-color: var(--cor-primaria);
+    }
+}
+

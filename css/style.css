@@ -22,7 +22,7 @@ font-family: 'Kanit', sans-serif; -- TOPICOS (Bold) tam 32
     --tam-titulo: 80px;
     
 
-    --margem: 320px;
+    --margem: 16.7%;
 }
 
 /*Configuração padrão-------------------------------------------*/
@@ -50,10 +50,11 @@ body {
     background-color: var(--cor-secundaria);
     list-style-type: none;
     display: flex;
+    align-items: center;
     justify-content: end;
     font-family: var(--texto-corrido);
     font-size: 20px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .nav-list > li {
@@ -92,18 +93,22 @@ body {
 }
 
 .hero-section{
-    margin-top: 110px;
     display: flex;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    margin: auto;
+    margin-top: 110px;
+    padding-left: 4%;
+    padding-right: 4%;
+    gap: 9%;
 }
 
 .hero-text{
-    flex: 1;
     justify-content: center;
     align-items: center;
-    margin-left: var(--margem);
-    margin-right: 50px;
-    max-width: 100%;
+    padding-right: 50px;
+    width: 100%;
 }
 
 .hero-text h1{
@@ -137,23 +142,22 @@ body {
 }
 
 .hero-img{
-    flex: 1;
-    margin-right: 320px;
-    margin-left: 50px;
+    display: flex;
     max-width: 100%;
     max-height: 100%;
+    justify-content: end;
 }
 
 .hero-img img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /*Sobre ------------------------------------*/
 .sobre{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 150px;
-    margin-bottom:150px;
     background-color: var(--cor-secundaria);
     min-height: 710px;
     align-items: center;
@@ -161,14 +165,26 @@ body {
     -moz-box-shadow: 0px 10px 25px 0px rgba(189,189,189,1);
     box-shadow: 0px 10px 25px 0px rgb(221, 221, 221);
 }
-
-.sobre-img{
-    flex: 1;
-    border-radius: 50%;
-    margin-left: var(--margem);
-    max-width: 100%;
-    max-height: 100%;
+.sobre-itens{
+    display: flex;
+    gap: 9%;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 4%;
+    padding-right: 4%;
 }
+
+.frame{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-img{}
 
 .sobre-img img{
     width: 400px;
@@ -180,13 +196,10 @@ body {
 
 .sobre-text{
     flex: 2;
-    margin-right: var(--margem);
-    margin-left: 150px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
 }
 
 .sobre-text h2{
@@ -207,21 +220,23 @@ body {
 /*Como funciona ------------------------------------------*/
 .como-funciona{
     display: flex;
+    align-items: center;
     padding-top: 100px;
-    align-items: center;
     padding-bottom: 100px;
-    align-items: center;
-    margin-left: var(--margem);
-    margin-right: var(--margem);
-    max-width: 100%;
-    max-height: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    
 }
 
 .cf-text{
     flex: 2;
     margin-right: 20px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     padding: 10px 20px 10px 20px;
 }
 
@@ -255,15 +270,17 @@ body {
 .topicos-trabalhados{
     background-color: var(--cor-secundaria);
     border-radius: 2px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 4%;
+    padding-right: 4%;
     max-width: 100vw;
     -webkit-box-shadow: 0px 5px 10px 3px rgba(194,194,194,1);
     -moz-box-shadow: 0px 5px 10px 3px rgba(194,194,194,1);
     box-shadow: 0px 5px 10px 3px rgba(194,194,194,1);
-    
+    max-width: 100%;
 }
 
 .topicos-trabalhados h2{
@@ -286,23 +303,26 @@ body {
 }
 
 .topicos-trabalhados ul{
-    column-count: 3;
-    gap: 40px;
-    margin: 0 280px 0 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
     list-style: none;
     text-transform: capitalize;
     color: var(--cor-texto);
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
-    max-width: 100%;
     min-height: 100%;
 }
 
-.topicos-trabalhados ul li{
-    max-width: 100%;
+.topicos-trabalhados li{
+    max-width: 30%;
+    max-height: 100%;
+    min-width: 20%;
     text-align: center;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 5px;
     background-color: var(--cor-primaria);
     border-radius: 2px;
     -webkit-box-shadow: 0px 10px 3px 0px rgba(222,222,222,1);
@@ -320,6 +340,8 @@ body {
 .feedback{
     padding-top: 100px;
     padding-bottom: 50px;
+    padding-left: 4%;
+    padding-right: 4%;
     margin-bottom: 100px;
 }
 
@@ -327,9 +349,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: var(--margem);
-    margin-right: var(--margem);
-    max-width: 100%;
+    margin:auto;
+    width: 100%;
+    max-width: 1280px;
 }
 
 .feedback h2{
@@ -386,6 +408,8 @@ body {
     min-height: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 4%;
+    padding-right: 4%;
     width: 100%;
 }
 
@@ -394,16 +418,19 @@ body {
     color: var(--cor-action);
     font-family: var(--texto-topicos);
     font-size: var(--tam-topicos);
-    margin-left: var(--margem);
+    width: 100%;
+    margin: auto;
     padding-bottom: 10px;
+    padding-left: 10px;
+    max-width: 1280px;
 }
 
 .perguntas-container{
     list-style-type: none;
-    margin-left: var(--margem);
-    margin-right: var(--margem);
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
     margin-bottom: 20px;
-
 }
 
 .pergunta{
@@ -440,6 +467,7 @@ body {
     padding-bottom: 60px;
     height: 100%;
     width: 100%;
+
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -466,14 +494,15 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: var(--margem);
-    margin-right: var(--margem);
+    justify-content: center;
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     -webkit-box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
     -moz-box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
     box-shadow: 0px 14px 78px 0px rgba(181,181,181,1);
-    max-width: 100%;
 }
 
 .lista-contatos{
@@ -483,7 +512,7 @@ body {
     border-radius: 20px 0 0 20px;
     padding-top: 40px;
     padding-bottom: 40px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .ilustracao-correio{
@@ -502,8 +531,8 @@ body {
 .contato {
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-left: 80px;
+    justify-content: start;
+    padding: 5px 40px 5px 40px;
     max-width: 100%;
 }
 

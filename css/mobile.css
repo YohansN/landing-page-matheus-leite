@@ -1,37 +1,4 @@
 /*Responsividade para versões Mobile*/
-/*html{
-    width: 100vw;
-    background-color: red;
-}*/
-
-/*Laptop tirar as margens dos lados*/
-@media screen and (max-width: 1024px){
-    html{
-        min-width: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(57, 57, 57);
-        min-height: 100%;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        color: var(--cor-texto);
-    }
-
-    body{
-        max-width: 100vw;
-        margin: 0 auto;
-        background-color: var(--cor-primaria);
-        min-height: 100%;
-    }
-    /*Nav*/
-    nav{
-        width: 100%;
-    }
     
     /*Hero*/
     /*Sobre*/
@@ -41,28 +8,39 @@
     /*FAQ*/
     /*Contatos*/
     /*Footer*/
-}
 
-/*Tablets (Ocultar imagens dispensáveis)*/
 @media screen and (max-width: 768px){
     html{
-        min-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        color: var(--cor-texto);
-    }
-
-    body{
-        max-width: 100vw;
-        margin: 0 auto;
-        background-color: var(--cor-primaria);
+        font-size: 50%;
     }
 }
 
+@media screen and (max-width: 425px){
+    html{
+        font-size: 40%;
+    }
+
+    /*topicos trabalhados*/
+    .topicos-trabalhados ul{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    /*Hero section*/
+    .hero-img{
+        display: none;
+    }
+
+    /*Como funciona*/
+    .cf-ilustracao {
+        display: none;
+    }
+
+    /*topicos trabalhados*/
+    .topicos-trabalhados ul{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

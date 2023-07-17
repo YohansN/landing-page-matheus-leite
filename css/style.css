@@ -349,15 +349,7 @@ body {
     padding-left: 4%;
     padding-right: 4%;
     margin-bottom: 10rem;
-}
-
-.card-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin:auto;
-    width: 100%;
-    max-width: 128rem;
+    min-height: 90rem;
 }
 
 .feedback h2{
@@ -369,11 +361,19 @@ body {
     padding-bottom: 4rem;
 }
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+    max-width: 128rem;
+}
+
 .card{
-    position: relative;
     padding: 3rem;
-    min-height: 40rem;
-    max-height: 70rem;
+    height: auto;
 }
 
 .card span{
@@ -387,25 +387,27 @@ body {
     height: 20rem;
     color: var(--cor-texto);
     overflow: hidden;
+    margin: auto;
 }
 
 .nome{
-    display: flex;
     font-family: var(--texto-corrido);
     color: var(--cor-texto);
     font-size: 2.3rem;
     padding-top: 1rem;
-    text-transform: capitalize;
-    justify-content: center;
+    text-transform: initial;
+    text-align: center;
 }
 
 .review{
-    position: absolute;
+    text-align: center;
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
     padding-top: 1rem;
     justify-content: center;
     color: var(--cor-texto);
+    width: 100%;
+    max-width: 40rem;
 }
 
 /*FAQ ----------------------------------------------------------*/

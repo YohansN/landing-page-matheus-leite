@@ -114,8 +114,14 @@
     .card span{
         margin: auto;
     }
+    .nome{
+        font-size: var(--tam-corrido);
+        display: block;
+        text-align: center;
+    }
     .review{
         text-align: center;
+        margin: auto;
     }
 
     .card-container p{

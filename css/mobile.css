@@ -7,15 +7,23 @@
 }
 
 @media screen and (max-width: 1024px){
-        /*Sobre*/
-        .sobre-itens{
-            display: flex;
-            flex-direction: column;
-        }
-        .sobre{
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-        }
+    /*navbar*/
+    .nav-list{
+        justify-content: space-around;
+    }
+    .nav-list > li{
+        margin-right: 0;
+    }
+
+    /*Sobre*/
+    .sobre-itens{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
 }
 
 @media screen and (max-width: 1070px){
@@ -76,8 +84,17 @@
     .hero-section{
         margin-top: 5rem;
     }
+    .hero-section p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     .hero-img{
         display: none;
+    }
+
+    /*sobre*/
+    .sobre{
+        margin-top: 10rem;
     }
     
     /*topicos trabalhados*/
@@ -104,6 +121,14 @@
     /*faq*/
     .pergunta{
         margin-bottom: 3rem;
+    }
+    /*Entre em contato*/
+    .contatos{
+        margin-bottom: 5rem;
+    }
+
+    .contatos > div > p{
+        padding-bottom: 5rem;
     }
 
     .form-email input{

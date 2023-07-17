@@ -49,12 +49,12 @@ body {
 .nav-list {
     padding: 2rem 0 2rem 0;
     background-color: var(--cor-secundaria);
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: end;
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     width: 100%;
     height: auto;
 }
@@ -62,8 +62,6 @@ body {
 .nav-list > li {
     display: inline;
     margin-right: 10rem;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .nav-list li a {

@@ -186,14 +186,18 @@ body {
     align-items: center;
 }
 
-.sobre-img{}
-
 .sobre-img img{
     width: 40rem;
     height: 40rem;
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 20%;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .sobre-text{
@@ -537,7 +541,7 @@ body {
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
     color: var(--cor-texto);
-    padding-left: 1rem;
+    padding: 1.2rem;
 }
 
 .icon{

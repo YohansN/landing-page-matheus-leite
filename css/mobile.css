@@ -58,6 +58,10 @@
         flex-direction: column;
     }
 
+    .ilustracao-correio img{
+        max-width: 25rem;
+    }
+
     .lista-contatos{
         border-radius: 2rem 2rem 0 0;
     }

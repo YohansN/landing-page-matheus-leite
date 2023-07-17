@@ -11,7 +11,7 @@ font-family: 'Kanit', sans-serif; -- TOPICOS (Bold) tam 32
     --cor-primaria: #F6F1F1;
     --cor-secundaria: #D0E6F0;
     --cor-action: #EFD593;
-    --cor-texto: #051023;
+    --cor-texto: #07152f;
 
     --texto-corrido: 'Archivo', sans-serif;
     --texto-topicos: 'Kanit', sans-serif;
@@ -19,7 +19,7 @@ font-family: 'Kanit', sans-serif; -- TOPICOS (Bold) tam 32
 
     --tam-corrido: 2rem;
     --tam-topicos: 4rem;
-    --tam-titulo: 8rem;
+    --tam-titulo: 6rem;
     
 
 }
@@ -103,7 +103,7 @@ body {
     margin-top: 11rem;
     padding-left: 4%;
     padding-right: 4%;
-    gap: 9%;
+    gap: 5rem;
 }
 
 .hero-text{
@@ -114,6 +114,7 @@ body {
 }
 
 .hero-text h1{
+    max-width: 100%;
     font-family: var(--texto-titulo);
     font-size: var(--tam-titulo);
     color: var(--cor-texto);
@@ -145,14 +146,15 @@ body {
 
 .hero-img{
     display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    justify-content: end;
+    width: 100%;
+    max-width: 49.8rem;
+    height: 100%;
 }
 
 .hero-img img{
     width: 100%;
     height: 100%;
+    max-width: 700px;
 }
 
 /*Sobre ------------------------------------*/
@@ -687,7 +689,7 @@ footer{
 .creditos p{
     color: var(--cor-primaria);
     font-family: var(--texto-corrido);
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -695,7 +697,7 @@ footer{
 .creditos a{
     color: var(--cor-primaria);
     font-family: var(--texto-corrido);
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
 }

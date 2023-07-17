@@ -1,23 +1,42 @@
 /*Responsividade para versões Mobile*/
-    
-    /*Hero*/
-    /*Sobre*/
-    /*Como Funciona*/
-    /*Topicos*/
-    /*Feedback*/
-    /*FAQ*/
-    /*Contatos*/
-    /*Footer*/
+
+@media screen and (max-width: 1215px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+        /*Sobre*/
+        .sobre-itens{
+            display: flex;
+            flex-direction: column;
+        }
+        .sobre{
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+}
+
+@media screen and (max-width: 1070px){
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-text{
+        text-align: center;
+        padding: 0;
+    }
+}
+
 
 @media screen and (max-width: 768px){
     html{
         font-size: 50%;
     }
-}
 
-@media screen and (max-width: 425px){
-    html{
-        font-size: 40%;
+    /*Como funciona*/
+    .cf-ilustracao{
+        display: none;
     }
 
     /*topicos trabalhados*/
@@ -25,9 +44,84 @@
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
     }
+
+    /*Entre em contato*/
+    .caixa-flutuante{
+        flex-direction: column;
+    }
+
+    .lista-contatos{
+        border-radius: 2rem 2rem 0 0;
+    }
+    .form-email{
+        border-radius: 0 0 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    :root{
+        --tam-corrido: 3rem;
+    }
+
+    html{
+        font-size: 40%;
+    }
+
+    /*Navbar*/
+    nav{
+        display: none;
+    }
+
+    /*Hero section*/
+    .hero-section{
+        margin-top: 5rem;
+    }
+    .hero-img{
+        display: none;
+    }
+    
+    /*topicos trabalhados*/
+    .topicos-trabalhados ul{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /*Feedback*/
+    .card-container{
+        flex-direction: column;
+    }
+    .card span{
+        margin: auto;
+    }
+    .review{
+        text-align: center;
+    }
+
+    .card-container p{
+        padding: 2rem;
+    }
+
+    /*faq*/
+    .pergunta{
+        margin-bottom: 3rem;
+    }
+
+    .form-email input{
+        padding: 2.4rem 4rem;
+        border-radius: 0.8rem;
+    }
+
+    /*footer*/
+    .footer-container{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 320px){
+    html{
+        font-size: 30%;
+    }
+
     /*Hero section*/
     .hero-img{
         display: none;
@@ -38,9 +132,12 @@
         display: none;
     }
 
-    /*topicos trabalhados*/
-    .topicos-trabalhados ul{
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    /*Entre em contato*/
+    .ilustracao-correio{
+        display: none;
     }
+    #email{
+        word-break: break-all;
+    }
+
 }

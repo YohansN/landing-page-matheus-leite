@@ -43,6 +43,10 @@ body {
     margin: 0 auto;
     background-color: var(--cor-primaria);
     font-size: 1.6rem;
+    background-color: #F6F1F1;
+    opacity: 1;
+    background-image: radial-gradient(#D0E6F0 1.4500000000000002px, #F6F1F1 1.4500000000000002px);
+    background-size: 29px 29px;
 }
 
 /*Nav bar-------------------------------------------*/
@@ -129,6 +133,7 @@ body {
     margin-top: 4rem;
     font-family: var(--texto-corrido);
     font-size: 3.2rem;
+    font-weight: 600;
     color: var(--cor-texto);
     padding: 2rem 4rem 2rem 4rem;
     border: 0.3rem solid var(--cor-action);
@@ -222,6 +227,7 @@ body {
     color: var(--cor-texto);
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
+    line-height: 2.3rem;
 }
 
 /*Como funciona ------------------------------------------*/

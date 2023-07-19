@@ -100,6 +100,10 @@
     .sobre{
         margin-top: 10rem;
     }
+
+    .sobre-text p{
+        line-height: normal;
+    }
     
     /*topicos trabalhados*/
     .topicos-trabalhados ul{

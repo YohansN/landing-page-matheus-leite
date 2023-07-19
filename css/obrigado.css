@@ -1,0 +1,105 @@
+/*Pagina de agradecimento após envio de formulário com email*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Frank+Ruhl+Libre:wght@700&family=Kanit:wght@700&display=swap');
+:root {
+    --cor-primaria: #F6F1F1;
+    --cor-secundaria: #D0E6F0;
+    --cor-action: #EFD593;
+    --cor-texto: #07152f;
+
+    --texto-corrido: 'Archivo', sans-serif;
+    --texto-topicos: 'Kanit', sans-serif;
+    --texto-titulo: 'Frank Ruhl Libre', serif;
+
+    --tam-corrido: 2rem;
+    --tam-topicos: 4rem;
+    --tam-titulo: 6rem;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #F6F1F1;
+    opacity: 1;
+    background-image: radial-gradient(#D0E6F0 2px, #F6F1F1 2px);
+    background-size: 40px 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    width: auto;
+}
+
+.agradecimento{
+    position: fixed;
+    bottom: 50%;
+}
+
+.voltar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.obrigado{
+    font-family: var(--texto-topicos);
+    font-size: var(--tam-titulo);
+    color: var(--cor-texto);
+    text-transform: uppercase;
+}
+
+.mensagem{
+    font-family: var(--texto-corrido);
+    font-size: var(--tam-corrido);
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.link > a{
+    font-family: var(--texto-topicos);
+    text-decoration: none;
+    font-size: var(--tam-corrido);
+    color: var(--cor-texto);
+    transition: 0.2s ease;
+}
+
+.link > a:hover{
+    background-color: var(--cor-secundaria);
+}
+
+
+/*Responsividade*/
+@media screen and (min-width: 2560px) {
+    html{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 40%;
+    }
+}

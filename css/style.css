@@ -224,6 +224,7 @@ body {
 }
 
 .sobre-text p{
+    text-align: justify;
     color: var(--cor-texto);
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
@@ -261,6 +262,7 @@ body {
 }
 
 .cf-text p{
+    text-align: justify;
     font-family: var(--texto-corrido);
     color: var(--cor-texto);
     font-size: var(--tam-corrido);
@@ -406,7 +408,7 @@ body {
 }
 
 .review{
-    text-align: center;
+    text-align: justify;
     font-family: var(--texto-corrido);
     font-size: var(--tam-corrido);
     padding-top: 1rem;

@@ -698,6 +698,10 @@ footer{
     font-size: var(--tam-corrido);
 }
 
+.aviso p{
+    text-align: justify;
+}
+
 .creditos p{
     color: var(--cor-primaria);
     font-family: var(--texto-corrido);
